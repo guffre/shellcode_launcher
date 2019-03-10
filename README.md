@@ -4,6 +4,10 @@ Its written in a pseudo-PIC style assembly, and saved as inline assembly for eas
 
 Note, there are `int 3` instructions in the launcher. This was written with the intent of debugging malware / malicious shellcode samples. If you want to include it in a project to actually launch and execute shellcode you might want to remove the `int 3` intsructions.
 
+## Usage
+
+    ./launcher.exe <shellcode_file>
+
 ## C Equivalent (for x86 OR x64)
 
     int main(int argc, char **argv)
